@@ -404,6 +404,11 @@ input[type="search"] {
  * Button component pack for Seed
  * Licensed under MIT
  */
+
+.org { 
+   font-size: 30px;
+}
+
 .c-button {
   -webkit-appearance: none;
   appearance: none;
@@ -489,7 +494,7 @@ input[type="search"] {
 /* Custom
 /* ---------------------------------------- */
 body {
-  font-family: "Libre Franklin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: "Lobster", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-weight: 300;
   text-align: center; }
 
@@ -516,7 +521,7 @@ body {
     top: 2px; }
     .app header .name .game-type {
       display: block;
-      font-size: 80%;
+      font-size: 20px;
       font-weight: bold;
       margin-top: 3px;
       text-transform: uppercase; }
@@ -671,7 +676,9 @@ body {
     border-radius: 1px;
     font-style: italic; }
   .ranking .name {
-    font-weight: 500; }
+    font-weight: 300;
+   font-size: 20px;
+   letter-spacing: 2px; }
   .ranking .points {
     font-weight: 500;
     min-width: 95px;
@@ -701,7 +708,8 @@ body {
       position: relative;
       top: -2px; }
     .top-rankings .ranking .name {
-      padding-left: 0; }
+      padding-left: 0;
+      font-size: 30px; }
     .top-rankings .ranking .points {
       padding-right: 0; }
     .top-rankings .ranking .rank {
