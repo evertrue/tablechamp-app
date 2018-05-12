@@ -29,6 +29,23 @@
             'c4' : defaultColors.c4,
             'c5' : defaultColors.c5
         };
+
+    let currentView = "singles";
+    let timer;
+
+    window.cycle = (on, cycle) => {
+      if (on) {
+        timer = setInterval(() => {
+           if (currentView === "singles") {
+             rankingToggle("doubles");
+           } else if (currentView === "doubles") {
+             rankingToggle("singles");
+           }
+         }, cycle);
+      }else {
+        clearInterval(timer);
+      }
+    };
     // ---------------------------------------------------
     // Ready
     // ---------------------------------------------------
